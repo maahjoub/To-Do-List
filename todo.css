@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 600px;
+  margin: 30px auto 0px auto;
+  background-color: #f6f6f6;
+}
+.container .form {
+  padding: 15px;
+  background-color: rgb(130, 230, 130);
+  position: relative;
+}
+.container .form .input {
+  display: inline-block;
+  padding: 10px 15px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: calc(100% - 15px);
+  color: #fff;
+  font-size: 20px;
+}
+.container .form .input:focus {
+  outline: none;
+}
+.container .form .add {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  right: 12px;
+  border-radius: 50%;
+  line-height: 45px;
+  background-color: #fff;
+  text-align: center;
+  color: rgb(49, 190, 49);
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+.container .form .add:hover {
+  transform: rotate(90deg);
+}
+.container .tasks {
+  padding: 15px;
+}
+.container .tasks .task:not(:last-child) {
+  margin-bottom: 10px;
+}
+.container .tasks .del {
+  float: right;
+  background-color: #e91e63;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  line-height: 10px;
+}
+.tasks .task:hover {
+  background-color: #f7f7f7;
+}
+.tasks .task.done {
+  opacity: .5;
+}
+.tasks .task {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.tasks .task span {
+  font-weight: bold;
+  font-size: 12px;
+  background-color: red;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.stat-res {
+  display: flex;
+  width: 600px;
+  margin: 10px auto;
+  background-color: #f6f6f6;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.task-count span,
+.completed-task span {
+  
+  padding: 2px 4px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+.task-count span {
+  background-color: #e91e63;
+}
+.completed-task span {
+  background-color: rgb(49 190 49);
+}
